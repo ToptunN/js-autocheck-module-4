@@ -1566,6 +1566,7 @@ console.table(users)
 
 
 // ========№38=========
+
 // Доповни код таким чином, щоб у змінній ascendingReleaseDates вийшла копія масиву releaseDates, відсортована за зростанням, а у змінній alphabeticalAuthors - копія масиву імен авторів authors, відсортована за алфавітом.
 // const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
 // const authors = [
@@ -1643,7 +1644,7 @@ console.table(users)
 //   },
 // ];
 
-// console.log(books)
+// console.table(books)
 
 // Доповни код таким чином, щоб:
 
@@ -1693,6 +1694,58 @@ console.table(users)
 
 // console.table(sortByName(users))
 
+
+
 // ============№45===============
 
-// 
+// Доповни код таким чином, щоб у змінній names вийшов масив імен авторів в алфавітному порядку, рейтинг книг яких більший за значення змінної MIN_BOOK_RATING (взято масив з задачі №41).
+
+// const MIN_BOOK_RATING = 8;
+// Change code below this line
+
+// const names = [...books]
+//   .filter(book => book.rating > MIN_BOOK_RATING)
+//   .sort((aAuthor, bAuthor) => aAuthor.author.localeCompare(bAuthor.author))
+//   .map(book=>book.author)
+
+// console.table(names)
+
+
+// ============№46===============
+// Доповни функцію getNamesSortedByFriendCount(users) таким чином, щоб вона повертала масив імен користувачів, відсортований за зростанням кількості їхніх друзів (властивість friends).
+
+// const getNamesSortedByFriendCount = users =>[...users]
+// .sort((aFriend,bFriend)=>aFriend.friends.length-bFriend.friends.length)
+//  .map(user=>user.name)
+// console.log(getNamesSortedByFriendCount(users))
+
+
+
+// ============№47===============
+
+// Доповни функцію getSortedFriends(users) таким чином, щоб вона повертала масив унікальних імен друзів (властивість friends), відсортований за алфавітом.
+
+// const getSortedFriends = users => [...users]
+    
+//   .flatMap(user => user.friends)
+//     // console.log(getSortedFriends(users))
+  
+//   .filter((uniqueFriend, index, array) => array.indexOf(uniqueFriend) === index)
+  // console.table(getSortedFriends(users))
+      
+  
+  //   .sort((aFriend, bFriend)=>aFriend.localeCompare(bFriend))    
+  // console.table(getSortedFriends(users))
+
+
+
+// ============№48===============
+
+// Доповни функцію getTotalBalanceByGender(users, gender) таким чином, щоб вона повертала загальний баланс користувачів (властивість balance), стать яких (властивість gender) збігається зі значенням параметра gender.
+
+// const getTotalBalanceByGender = (users, gender) => [...users]
+//   .filter(user => user.gender === gender)
+//   .reduce((acc, user) => acc + user.balance, 0)
+//     console.table(getTotalBalanceByGender(users, "female"))
+
+
