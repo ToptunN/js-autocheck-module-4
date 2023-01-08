@@ -1217,25 +1217,482 @@
 
 // У змінній eachElementInThirdIsOdd був результат перевірки всіх елементів масиву thirdArray на непарність.
 
-const firstArray = [26, 94, 36, 18];
-const secondArray = [17, 61, 23];
-const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every(el => el % 2 === 0);
+// console.log(eachElementInFirstIsEven);
+
+// const eachElementInFirstIsOdd = firstArray.every(el => el % 2 !== 0);
+// console.log(eachElementInFirstIsOdd);
+
+// const eachElementInSecondIsEven = secondArray.every(el => el % 2 === 0);
+// console.log(eachElementInSecondIsEven);
+
+// const eachElementInSecondIsOdd = secondArray.every(el=> el % 2 !== 0);
+// console.log(eachElementInSecondIsOdd);
+
+// const eachElementInThirdIsEven = thirdArray.every(el => el % 2 === 0);
+// console.log(eachElementInThirdIsEven)
+
+// const eachElementInThirdIsOdd = thirdArray.every(el => el % 2 !== 0);
+// console.log(eachElementInThirdIsOdd)
+
+
+
+// ====№31====
+
+// Доповни функцію isEveryUserActive(users) таким чином, щоб вона перевіряла, чи всі користувачі зараз активні (властивість isActive) і повертала true або false.
+
+// const users =
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+// ]
+// const isEveryUserActive = (users) => users.every(user => user.isActive === true);
+// console.log(isEveryUserActive(users))
+
+
+
+
+// ====№32====
+
+// Використовуючи метод some(), доповни код таким чином, щоб:
+
+// У змінній anyElementInFirstIsEven був результат перевірки наявності парних елементів в масиві firstArray.
+// У змінній anyElementInFirstIsOdd був результат перевірки наявності непарних елементів в масиві firstArray.
+// У змінній anyElementInSecondIsEven був результат перевірки наявності парних елементів в масиві secondArray.
+// У змінній anyElementInSecondIsOdd був результат перевірки наявності непарних елементів в масиві secondArray.
+// У змінній anyElementInThirdIsEven був результат перевірки наявності парних елементів в масиві thirdArray.
+// У змінній anyElementInThirdIsOdd був результат перевірки наявності непарних елементів в масиві thirdArray.
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(el => el % 2 === 0);
+// console.log(anyElementInFirstIsEven)
+
+// const anyElementInFirstIsOdd = firstArray.some(el => el%2 !==0);
+// console.log(anyElementInFirstIsOdd)
+
+// const anyElementInSecondIsEven = secondArray.some(el => el % 2 === 0);
+// console.log(anyElementInSecondIsEven)
+
+// const anyElementInSecondIsOdd = secondArray.some(el => el % 2 !== 0);
+// console.log(anyElementInSecondIsOdd)
+
+// const anyElementInThirdIsEven = thirdArray.some(el => el % 2 === 0);
+// console.log(anyElementInThirdIsEven)
+
+
+// const anyElementInThirdIsOdd = thirdArray.some(el => el % 2 !== 0);
+// console.log(anyElementInThirdIsOdd)
+
+
+
+// =====№33============
+// Доповни функцію isAnyUserActive(users) таким чином, щоб вона перевіряла наявність активних користувачів (властивість isActive) і повертала true або false.
+
+// const users =
+// [
+//   {
+//     name: "Moore Hensley",
+//     email: "moorehensley@indexia.com",
+//     eyeColor: "blue",
+//     friends: ["Sharron Pace"],
+//     isActive: false,
+//     balance: 2811,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sharlene Bush",
+//     email: "sharlenebush@tubesys.com",
+//     eyeColor: "blue",
+//     friends: ["Briana Decker", "Sharron Pace"],
+//     isActive: true,
+//     balance: 3821,
+//     gender: "female"
+//   },
+//   {
+//     name: "Ross Vazquez",
+//     email: "rossvazquez@xinware.com",
+//     eyeColor: "green",
+//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//     isActive: false,
+//     balance: 3793,
+//     gender: "male"
+//   },
+//   {
+//     name: "Elma Head",
+//     email: "elmahead@omatom.com",
+//     eyeColor: "green",
+//     friends: ["Goldie Gentry", "Aisha Tran"],
+//     isActive: true,
+//     balance: 2278,
+//     gender: "female"
+//   },
+//   {
+//     name: "Carey Barr",
+//     email: "careybarr@nurali.com",
+//     eyeColor: "blue",
+//     friends: ["Jordan Sampson", "Eddie Strong"],
+//     isActive: true,
+//     balance: 3951,
+//     gender: "male"
+//   },
+//   {
+//     name: "Blackburn Dotson",
+//     email: "blackburndotson@furnigeer.com",
+//     eyeColor: "brown",
+//     friends: ["Jacklyn Lucas", "Linda Chapman"],
+//     isActive: false,
+//     balance: 1498,
+//     gender: "male"
+//   },
+//   {
+//     name: "Sheree Anthony",
+//     email: "shereeanthony@kog.com",
+//     eyeColor: "brown",
+//     friends: ["Goldie Gentry", "Briana Decker"],
+//     isActive: true,
+//     balance: 2764,
+//     gender: "female"
+//   }
+//   ]
+
+//   // Change code below this line
+// const isAnyUserActive = users => users.some(el => el.isActive === true)
+// console.log(isAnyUserActive(users))
+
+
+
+// =====№34============
+
+// Ігровому сервісу необхідний функціонал підрахунку середнього часу, проведеного в іграх. Доповни код таким чином, щоб у змінній totalPlayTime вийшло загальний ігровий час з масиву playtimes.
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((acc, playtime) => acc + playtime,0)
+
+// console.log(totalPlayTime)
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+
+
+// ==========№35========
+
+// Нашому сервісу необхідно розрахувати середній час, проведений в одній грі для кожного гравця, і отримати загальну суму цих значень часу. Розрахувати час для кожного з гравців можна, розділивши його час (властивість playtime) на кількість ігор (властивість gamesPlayed).
+
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
+// console.table(players);
 // Change code below this line
 
-const eachElementInFirstIsEven = firstArray.every(el => el % 2 === 0);
-console.log(eachElementInFirstIsEven);
+// 1.визначити середній час гри кожного гравця playtime/gamesPlayed
+// 2.порахувати суму середнього часу гри для всіх графців
 
-const eachElementInFirstIsOdd = firstArray.every(el => el % 2 !== 0);
-console.log(eachElementInFirstIsOdd);
 
-const eachElementInSecondIsEven = secondArray.every(el => el % 2 === 0);
-console.log(eachElementInSecondIsEven);
+// const totalAveragePlaytimePerGame = players.reduce((totalTime, item) => totalTime + item.playtime / item.gamesPlayed, 0);
+// console.log(totalAveragePlaytimePerGame)
 
-const eachElementInSecondIsOdd = secondArray.every(el=> el % 2 !== 0);
-console.log(eachElementInSecondIsOdd);
 
-const eachElementInThirdIsEven = thirdArray.every(el => el % 2 === 0);
-console.log(eachElementInThirdIsEven)
 
-const eachElementInThirdIsOdd = thirdArray.every(el => el % 2 !== 0);
-console.log(eachElementInThirdIsOdd)
+
+// ======№36======
+
+  const users =
+[
+  {
+    name: "Moore Hensley",
+    email: "moorehensley@indexia.com",
+    eyeColor: "blue",
+    friends: ["Sharron Pace"],
+    isActive: false,
+    balance: 2811,
+    gender: "male"
+  },
+  {
+    name: "Sharlene Bush",
+    email: "sharlenebush@tubesys.com",
+    eyeColor: "blue",
+    friends: ["Briana Decker", "Sharron Pace"],
+    isActive: true,
+    balance: 3821,
+    gender: "female"
+  },
+  {
+    name: "Ross Vazquez",
+    email: "rossvazquez@xinware.com",
+    eyeColor: "green",
+    friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+    isActive: false,
+    balance: 3793,
+    gender: "male"
+  },
+  {
+    name: "Elma Head",
+    email: "elmahead@omatom.com",
+    eyeColor: "green",
+    friends: ["Goldie Gentry", "Aisha Tran"],
+    isActive: true,
+    balance: 2278,
+    gender: "female"
+  },
+  {
+    name: "Carey Barr",
+    email: "careybarr@nurali.com",
+    eyeColor: "blue",
+    friends: ["Jordan Sampson", "Eddie Strong"],
+    isActive: true,
+    balance: 3951,
+    gender: "male"
+  },
+  {
+    name: "Blackburn Dotson",
+    email: "blackburndotson@furnigeer.com",
+    eyeColor: "brown",
+    friends: ["Jacklyn Lucas", "Linda Chapman"],
+    isActive: false,
+    balance: 1498,
+    gender: "male"
+  },
+  {
+    name: "Sheree Anthony",
+    email: "shereeanthony@kog.com",
+    eyeColor: "brown",
+    friends: ["Goldie Gentry", "Briana Decker"],
+    isActive: true,
+    balance: 2764,
+    gender: "female"
+  }
+  ]
+console.table(users)
+  // Доповни функцію calculateTotalBalance(users) таким чином, щоб вона рахувала і повертала суму всіх коштів (властивість balance), які зберігають користувачі з масиву users.
+// Change code below this line
+// const calculateTotalBalance = users => users.reduce((acc,item)=> acc + item.balance,0);
+
+// console.log(calculateTotalBalance(users))
+
+
+// ========№37===========
+
+// Доповни функцію getTotalFriendCount(users) таким чином, щоб вона рахувала і повертала загальну кількість друзів (властивість friends) усіх користувачів з масиву users.
+
+// =========1st solution========
+
+// const getTotalFriendCount = users => users.flatMap(user => user.friends).length
+// console.log(getTotalFriendCount(users))
+
+
+// =========2nd solution=========
+// const getTotalFriendCount = users => users.reduce((acc, user) => acc + user.friends.length, 0)
+// console.log(getTotalFriendCount(users))
+
+
+// ========№38=========
+// Доповни код таким чином, щоб у змінній ascendingReleaseDates вийшла копія масиву releaseDates, відсортована за зростанням, а у змінній alphabeticalAuthors - копія масиву імен авторів authors, відсортована за алфавітом.
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+// // console.log(releaseDates)
+// console.table(authors)
+// Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// console.log(ascendingReleaseDates)
+// console.log(releaseDates)
+
+// const alphabeticalAuthors = [...authors].sort()
+// console.log(alphabeticalAuthors)
+
+
+
+// =========№39=========
+
+// Онлайн бібіліотеці необхідно відображати книги, відсортовані за датою видання, за її зростанням або спаданням. Доповни код таким чином, щоб у змінній ascendingReleaseDates вийшла копія масиву releaseDates, відсортована за зростанням, а у змінній descendingReleaseDates - копія, відсортована за спаданням.
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// console.log(releaseDates)
+// // Change code below this line
+
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+// console.log(ascendingReleaseDates)
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+// console.log(descendingReleaseDates)
+
+
+// ========№40=========
+
+// Онлайн бібіліотеці необхідно відображати книги, відсортовані за автором, в алфавітному і зворотному алфавітному порядку. Доповни код таким чином, щоб у змінній authorsInAlphabetOrder вийшла копія масиву authors, відсортована за алфавітом, а у змінній authorsInReversedOrder - копія, відсортована у зворотному алфавітному порядку.
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+// console.log(authorsInAlphabetOrder)
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+// console.log(authorsInReversedOrder)
+
+
+// ======№41=======
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     rating: 7.94
+//   },
+//   {
+//     title: "Enemy of God",
+//     author: "Bernard Cornwell",
+//     rating: 8.67
+//   },
+// ];
+
+// console.log(books)
+
+// Доповни код таким чином, щоб:
+
+// У змінній sortedByAuthorName вийшов масив книг, відсортований за ім'ям автора в алфавітному порядку.
+
+// У змінній sortedByReversedAuthorName вийшов масив книг, відсортований за ім'ям автора у зворотному алфавітному порядку.
+
+// У змінній sortedByAscendingRating вийшов масив книг, відсортований за зростанням рейтингу.
+
+// У змінній sortedByDescentingRating вийшов масив книг, відсортований за спаданням рейтингу.
+
+// Change code below this line
+// const sortedByAuthorName = [...books].sort((aAuthor, bAuthor) => aAuthor.author.localeCompare(bAuthor.author));
+// console.log(sortedByAuthorName)
+
+// const sortedByReversedAuthorName = [...books].sort((aAuthor, bAuthor) => bAuthor.author.localeCompare(aAuthor.author))
+// console.log(sortedByReversedAuthorName)
+
+// const sortedByAscendingRating = [...books].sort((aRating, bRating) => aRating.rating - bRating.rating);
+// console.table(sortedByAscendingRating)
+
+// const sortedByDescentingRating = [...books].sort((aRating, bRating) => bRating.rating - aRating.rating);
+// console.table(sortedByDescentingRating)
+
+
+// =======№42======
+// Доповни функцію sortByAscendingBalance(users(масив беру із задачі №36)) таким чином, щоб вона повертала масив користувачів, відсортований за зростанням їх балансу (властивість balance).
+
+// const sortByAscendingBalance = users => [...users].sort((aBalance, bBalance) => aBalance.balance - bBalance.balance);
+// console.table(sortByAscendingBalance(users))
+
+
+
+// =======№43======
+// Доповни функцію sortByDescendingFriendCount(users) таким чином, щоб вона повертала масив користувачів, відсортований за спаданням кількості їхніх друзів (властивість friends).
+
+// const sortByDescendingFriendCount = users => [...users].sort((aQuantity, bQuantity) => bQuantity.friends.length - aQuantity.friends.length)
+
+// console.table(sortByDescendingFriendCount(users))
+
+
+// ============№44===============
+
+// Доповни функцію sortByName(users) таким чином, щоб вона повертала масив користувачів, відсортований за їх ім'ям (властивість name) в алфавітному порядку.
+
+// const sortByName = users => [...users].sort((aName, bName)=>aName.name.localeCompare(bName.name))
+
+// console.table(sortByName(users))
+
+// ============№45===============
+
+// 
